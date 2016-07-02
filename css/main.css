@@ -1,0 +1,142 @@
+.wrap ul li{
+	list-style: none;
+	float: center;
+}
+
+.wrap{
+	margin:0px;
+}
+img{
+	padding-left: 0;
+}	
+.wrap ul li ul li.sublist{
+	display: none;
+}
+.wrap ul li:hover>ul li{
+	display: inline-block;
+    float: none;
+	font-size: 20;
+}
+.footer{
+	width:100%;
+  background:url("../images/footer.png");
+  margin: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}/**/
+nav a { 
+    text-decoration: none;
+    font: 12px/1 Verdana;
+    color: #000;
+    display: block; }
+nav a:hover { 
+	text-decoration: 
+	underline; }
+nav ul { 
+    margin: 0;
+    padding: 0; }
+nav ul li {
+margin: 0; 
+padding: 0; }
+
+/* Top-level menu */
+nav > ul > li { 
+    float: left;
+    position: relative; }
+nav > ul > li > a { 
+    padding: 10px 30px;
+    border-left: 1px solid #000;
+    display: block;
+	}
+nav ul li ul { 
+    position: absolute;
+    background: #ACEBC9;
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    display: none; }
+nav ul li ul li { 
+    text-align: center;
+    width: 100%; }
+nav ul li ul a { 
+	padding: 10px 0; 
+}
+nav ul li:hover ul { 
+	display: block; 
+}
+body{
+	background: url(../images/bg11.jpg) no-repeat fixed;
+	width: 100% 100%;
+}
+header{
+	position: fixed;
+	background:url("../images/header.png");
+	width:100%;
+	text-align:right;
+}
+
+.maincontent, .maincontent1{
+	margin-top: 120px;
+	margin-bottom: 5px;
+	margin-left: 200px;
+}
+section{
+	height: 300px;
+	width: 250px;
+
+	background-color: white;
+	text-align: center;
+}
+
+section img, .maincontent img{
+	height: 200px;
+	width: 150px;
+}
+.ms1 ul li{
+	text-decoration: none;
+	list-style: none;
+	float: center;
+	position: relative;
+}
+.ms1 ul ul>li{
+	display: none;
+}
+.ms1 ul li:hover>ul li{
+	display: list-item;
+    float: none;
+    padding: 10px 30px;
+	}
+.ms1 ul li ul li{
+	text-align: left;
+    background: #ACEBC9;
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+}
+.herosection{
+	color: #ff3300;
+	height: 90%;
+	width: 100%;
+	margin-bottom: 10px;
+	background-color: #99ccff;
+	font-family: 'Tangerine', serif;
+	font-size: 28px;
+}
+.herosection img{
+	height: 90%;
+	width: 100%;
+
+}
+.footersection, .footersection1{
+	margin: 10px 100px;
+	height: 60px;
+background-color:#99ccff; 
+font-size:15px ;
+}
+.footersection1{
+	font-size:20px ;
+}
