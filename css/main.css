@@ -1,41 +1,41 @@
-.wrap ul li{
+/*Header section*/
+header{
+	position: fixed;
+	background:url("../images/header.png");
+	width:100%;
+	height: 91px;
+	text-align:right;
+}
+/*Add the styles to the list items*/
+.wrap ul li, .ms1 ul li{
 	list-style: none;
 	float: center;
 }
-
+/*Remove the margin to the header section*/
 .wrap{
 	margin:0px;
 }
-img{
-	padding-left: 0;
-}	
-.wrap ul li ul li.sublist{
+/*Hiding the sublist in the header section*/
+.wrap ul li ul li.sublist, .ms1 ul ul>li{
 	display: none;
 }
-.wrap ul li:hover>ul li{
-	display: inline-block;
+/*showing the sublist when the mouse is hovered on the anchor tag of the main list in the header section*/
+.wrap ul li:hover>ul li, .ms1 ul li:hover>ul li{
+	display: list-item;
     float: none;
-	font-size: 20;
+    text-align:center;
 }
-.footer{
-	width:100%;
-  background:url("../images/footer.png");
-  margin: 0px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #ffffff;
-  text-align: center;
-}/**/
-nav a { 
+/*set the color, font and removing the underline of the links in navigation bar*/
+nav a, .ms1 a { 
     text-decoration: none;
     font: 12px/1 Verdana;
     color: #000;
-    display: block; }
+    display: block;
+}
+/*Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari in the navigation bar*/
 nav a:hover { 
-	text-decoration: 
-	underline; }
+	text-decoration: underline; }
+/*remove the margin and padding for the unordered lists*/
 nav ul { 
     margin: 0;
     padding: 0; }
@@ -52,91 +52,121 @@ nav > ul > li > a {
     border-left: 1px solid #000;
     display: block;
 	}
-nav ul li ul { 
+/*Dropdown menu*/
+nav ul li ul, .ms1 ul li ul li { 
     position: absolute;
     background: #ACEBC9;
     width: 100%; 
     margin: 0;
     padding: 0;
     display: none; }
+
 nav ul li ul li { 
     text-align: center;
     width: 100%; }
 nav ul li ul a { 
 	padding: 10px 0; 
 }
-nav ul li:hover ul { 
+nav ul li:hover ul, .ms1 ul li:hover>ul li{ 
 	display: block; 
 }
+/*set the background image for the webpage*/
 body{
-	background: url(../images/bg11.jpg) no-repeat fixed;
-	width: 100% 100%;
+	background-color: #4E8AF2;
+	/*background: url(../images/bg11.jpg) no-repeat fixed;*/
 }
-header{
-	position: fixed;
-	background:url("../images/header.png");
-	width:100%;
-	text-align:right;
-}
-
-.maincontent, .maincontent1{
+/*set the top and bottom margin for the maincontent sections*/
+.maincontent{
 	margin-top: 120px;
-	margin-bottom: 5px;
-	margin-left: 200px;
+	margin-bottom: 50px;
 }
+.maincontent1{
+	margin-bottom:50px;
+}
+/*set the properties of the sections in the webpage*/
 section{
 	height: 300px;
 	width: 250px;
-
-	background-color: white;
+	background-color: #4E8AF2;
 	text-align: center;
 }
-
-section img, .maincontent img{
+/*set the properties of all the images in the sections of the webpage*/
+section img{
+	margin-top: 20px;
 	height: 200px;
 	width: 150px;
 }
-.ms1 ul li{
-	text-decoration: none;
-	list-style: none;
-	float: center;
-	position: relative;
-}
-.ms1 ul ul>li{
-	display: none;
-}
+/*Add the styles to the list items*/
 .ms1 ul li:hover>ul li{
-	display: list-item;
-    float: none;
-    padding: 10px 30px;
-	}
-.ms1 ul li ul li{
 	text-align: left;
-    background: #ACEBC9;
-    width: 100%; 
-    margin: 0;
-    padding: 0;
+	padding: 10px;
 }
+.ms1 ul li ul li{
+	position: relative;
+	background-color: #ACCFEB;
+}
+/*set the properties of the herosection*/
 .herosection{
-	color: #ff3300;
-	height: 90%;
-	width: 100%;
-	margin-bottom: 10px;
-	background-color: #99ccff;
+	color: black;
+	height: 78%;
+	margin-bottom: 60px;
 	font-family: 'Tangerine', serif;
+	background-color: #4E8AF2;
 	font-size: 28px;
 }
+/*set the properties of the image in the herosection*/
 .herosection img{
+	margin-top: 0px;
 	height: 90%;
 	width: 100%;
-
 }
+/*set the properties of footer*/
 .footersection, .footersection1{
+	color:white;
 	margin: 10px 100px;
 	height: 60px;
-background-color:#99ccff; 
-font-size:15px ;
+	background-color:#6E7475; 
+	font-size:15px ;
 }
 .footersection1{
 	font-size:20px ;
+}
+/*setting the properties of footer and selecting the background image*/
+.footer{
+	width:100%;
+	height: 30%;
+  background-color: #6E7475;
+  margin-top: 0px;
+  text-align: center;
+}
+/*set the properties of the buttons in the webpage*/
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+}
+.twocols{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+.twocols img{
+	height: 88%;
+	width: 100%;
+}
+.subsection, .subsection img{
+	width: 100%;
+	height: 60%;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	text-align: left;
+	font-family: 'Flamenco';
 }
